@@ -22,7 +22,7 @@ full_final<-paste(dir,final,sep='/') # the final PDF file of the saved plots
 require(ggplot2)
 
 # get euploid panel data
-load('/fh/fast/shou_w/NextGenSeq/RadSeq/Euploid_Panel/reads/20150528_euploid.RData')
+load('/fh/fast/shou_w/NextGenSeq/RadSeq/Euploid_Panel/20150528_euploid.RData')
 
 # get markers below desired CV threshold (15% is ~5000 markers, 10% is ~1300)
 panel<-euploid_pass[which(euploid_pass$cv<=15),]
